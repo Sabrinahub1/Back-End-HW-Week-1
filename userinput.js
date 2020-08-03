@@ -1,7 +1,13 @@
+//Install node npm and inquirer. Require inquirer, fs and greeting.js\
+
 var inquirer = require("inquirer");
 var skw = require('fs');
 const Hello = require('../greetings.js')
+
+//Greet user when calling the function Hello.
 Hello ()
+
+// Create user questions and log user input and password 
 function userQuestions(){}
 
 inquirer
