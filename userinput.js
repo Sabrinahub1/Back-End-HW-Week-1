@@ -8,13 +8,13 @@ inquirer
 .prompt([
     {
     type: "input",
-    message: "What is your user name?",
+    message: "What is your User Name?",
     name: "username"
     },
     {
     type: "input",
-    message: "What is your git hub name?",
-    name: "githubName"
+    message: "What is your Git Hub name?",
+    name: "gitHubName"
     },
     {  
     type: "password",
