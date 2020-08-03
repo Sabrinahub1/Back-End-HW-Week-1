@@ -2,7 +2,7 @@
 
 var inquirer = require("inquirer");
 var skw = require('fs');
-const Hello = require('../greetings.js')
+const Hello = require('./greetings.js')
 
 //Greet user when calling the function Hello.
 Hello ()
@@ -21,6 +21,11 @@ inquirer
     type: "input",
     message: "What is your Git Hub name?",
     name: "gitHubName"
+    },
+    {
+        type: "input",
+        message: "What is your favorite website?",
+        name: "website"
     },
     {  
     type: "password",
@@ -45,7 +50,7 @@ inquirer
     var skw = require("fs");
 // store user entered information in the file  userPassword.txt
     skw.writeFile("./userPassword.txt",data.username + " : " + data.
-githubName + " : " + data.password, function(err) {
+gitHubName + " : " + data.website + " : " + data.password, function(err) {
      // fs.appendFile("userPassword.txt",data.username + " : " + data.password, 
 
 if (err) {return console.log(err);
